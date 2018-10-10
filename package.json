@@ -1,0 +1,41 @@
+{
+    "name": "gringolito-theme",
+    "displayName": "Gringolito Theme",
+    "description": "Gringolito Color Theme (inspired on Monokai colors)",
+    "version": "0.1.0",
+    "publisher": "gringolito",
+    "author": {
+        "name": "Filipe Utzig",
+        "email": "filipeutzig@gmail.com"
+    },
+    "engines": {
+        "vscode": "^1.28.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "keywords": [
+        "gringolito",
+        "monokai",
+        "colorscheme"
+    ],
+    "preview": true,
+    "license": "SEE LICENSE IN LICENSE",
+    "contributes": {
+        "themes": [
+            {
+                "label": "Gringolito",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Gringolito-color-theme.json"
+            }
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/gringolito/vscode-gringolito-theme.git"
+    },
+    "homepage": "https://github.com/gringolito/vscode-gringolito-theme/",
+    "bugs": {
+        "url": "https://github.com/gringolito/vscode-gringolito-theme/issues"
+    }
+}
