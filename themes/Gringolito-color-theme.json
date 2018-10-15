@@ -8,6 +8,16 @@
 			}
 		},
 		{
+			"name": "Shell call to variable",
+			"scope": [
+				"string.interpolated.dollar.shell",
+				"string.interpolated.backtick.shell"
+			],
+			"settings": {
+				"foreground": "#FD971F"
+			}
+		},
+		{
 			"name": "String",
 			"scope": "string",
 			"settings": {
@@ -23,7 +33,10 @@
 		},
 		{
 			"name": "Built-in constant",
-			"scope": "constant.language",
+			"scope": [
+				"constant.language",
+				"support.variable.magic.python"
+			],
 			"settings": {
 				"foreground": "#875FFF"
 			}
@@ -32,19 +45,21 @@
 			"name": "User-defined constant",
 			"scope": [
 				"constant.character",
-				"constant.other.variable"
+				"constant.other.variable",
+				"constant.other.caps"
 			],
 			"settings": {
 				"foreground": "#875FFF"
 			}
 		},
-			{
+		{
 			"name": "Formating literals",
 			"scope": [
-				"constant.other.placeholder"
+				"constant.other.placeholder",
+				"constant.character.format.placeholder"
 			],
 			"settings": {
-				"foreground": "#FE8019"
+				"foreground": "#FD971F"
 			}
 		},
 		{
@@ -56,9 +71,11 @@
 		},
 		{
 			"name": "this Variable",
-			"scope": "variable.language.this",
+			"scope": [
+				"variable.language.this",
+				"variable.language.special.self"
+			],
 			"settings": {
-				"fontStyle": "",
 				"foreground": "#A6E22E"
 			}
 		},
@@ -69,7 +86,7 @@
 				"entity.name.function.preprocessor",
 			],
 			"settings": {
-				"foreground": "#FE8019"
+				"foreground": "#FD971F"
 			}
 		},
 		{
@@ -90,7 +107,6 @@
 			"name": "Control statetments",
 			"scope": "keyword.control",
 			"settings": {
-				"fontStyle": "",
 				"foreground": "#F92672"
 			}
 		},
@@ -98,15 +114,24 @@
 			"name": "C++ Control statetments",
 			"scope": "keyword.control.cpp",
 			"settings": {
-				"fontStyle": "",
 				"foreground": "#A6E22E"
+			}
+		},
+		{
+			"name": "Shell separators",
+			"scope": [
+				"punctuation.separator.pipe-sign.shell",
+				"punctuation.definition.case-pattern.shell",
+				"punctuation.terminator.case-clause.shell"
+			],
+			"settings": {
+				"foreground": "#F92672"
 			}
 		},
 		{
 			"name": "Storage",
 			"scope": "storage",
 			"settings": {
-				"fontStyle": "",
 				"foreground": "#F92672"
 			}
 		},
@@ -136,10 +161,34 @@
 		},
 		{
 			"name": "Function name",
-			"scope": "entity.name.function",
+			"scope": [
+				"entity.name.function",
+				"meta.function-call.generic"
+			],
 			"settings": {
-				"fontStyle": "",
 				"foreground": "#66D9EF"
+			}
+		},
+		{
+			"name": "Class function identifier",
+			"scope": [
+				"variable.parameter.function.language.special.self",
+				"variable.parameter.function.language.special.cls"
+			],
+			"settings": {
+				"fontStyle": "italic bold",
+				"foreground": "#FD971F"
+			}
+		},
+		{
+			"name": "Shell variable",
+			"scope": [
+				"variable.other.bracket.shell",
+				"variable.other.positional.shell",
+				"variable.other.normal.shell"
+			],
+			"settings": {
+				"foreground": "#FD971F"
 			}
 		},
 		{
@@ -154,7 +203,6 @@
 			"name": "Tag name",
 			"scope": "entity.name.tag",
 			"settings": {
-				"fontStyle": "",
 				"foreground": "#F92672"
 			}
 		},
@@ -162,15 +210,21 @@
 			"name": "Tag attribute",
 			"scope": "entity.other.attribute-name",
 			"settings": {
-				"fontStyle": "",
 				"foreground": "#A6E22E"
+			}
+		},
+		{
+			"name": "Shell built-in",
+			"scope": "support.function.builtin.shell",
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#F92672"
 			}
 		},
 		{
 			"name": "Library function",
 			"scope": "support.function",
 			"settings": {
-				"fontStyle": "",
 				"foreground": "#66D9EF"
 			}
 		},
@@ -178,7 +232,6 @@
 			"name": "Library constant",
 			"scope": "support.constant",
 			"settings": {
-				"fontStyle": "",
 				"foreground": "#66D9EF"
 			}
 		},
@@ -204,7 +257,6 @@
 			"name": "Invalid",
 			"scope": "invalid",
 			"settings": {
-				"fontStyle": "",
 				"foreground": "#F8F8F0"
 			}
 		},
