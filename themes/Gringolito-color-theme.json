@@ -21,7 +21,7 @@
 			"name": "String",
 			"scope": "string",
 			"settings": {
-				"foreground": "#FCE94F"
+				"foreground": "#E6DB74"
 			}
 		},
 		{
@@ -98,7 +98,10 @@
 		},
 		{
 			"name": "Keyword Cast",
-			"scope": "keyword.operator.cast",
+			"scope": [
+				"keyword.operator.cast",
+				"keyword.operator.sizeof"
+			],
 			"settings": {
 				"foreground": "#A6E22E"
 			}
@@ -115,6 +118,13 @@
 			"scope": "keyword.control.cpp",
 			"settings": {
 				"foreground": "#A6E22E"
+			}
+		},
+		{
+			"name": "Doxygen keywords",
+			"scope": "keyword.source.doxygen",
+			"settings": {
+				"foreground": "#F92672"
 			}
 		},
 		{

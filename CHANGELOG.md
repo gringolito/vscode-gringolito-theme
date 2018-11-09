@@ -1,5 +1,13 @@
 # Change Log
 
+## [0.3.0] - 2018/11/09
+### Added
+- Initial doxygen support
+
+### Changed
+- Fix string color tone
+- Fix sizeof highlight
+
 ## [0.2.0] - 2018/10/15
 ### Added
 - Improved Python and Shell syntax highlight
